@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a onclick="mostrar('inicio')">Inicio</a></li>
+                <li><a onclick="mostrar('cursos')">Cursos</a></li>
+                <li><a onclick="mostrar('escuela')">Escuela</a></li>
+                <li><a onclick="mostrar('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <section id="inicio" class="seccion">
+            <h1>Bienvenidos a la mejor escuela de baile de Asturias y Gijón</h1>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis ratione, quo asperiores nisi quod
+                atque deleniti adipisci iste enim quas, earum maiores aspernatur modi animi autem. Rem, possimus
+                perferendis.</p>
+        </section>
+
+        <section id="cursos" class="seccion">
+            <h1>Cursos de Baile: Salsa, Bachata, Street Dance</h1>
+            <ul>
+                <li>Salsa</li>
+                <li>Salsa 2</li>
+                <li>Bachata</li>
+                <li>Bachata 2</li>
+                <li>Street Dance</li>
+            </ul>
+
+            <h2>Horarios de nuestras clases de baile</h2>
+
+        </section>
+
+        <section id="escuela" class="seccion">
+            <h1>Nuestra Escuela</h1>
+            <p>Desde los comienzos ....</p>
+
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h1>Ven a conocernos</h1>
+            <address>
+
+            </address>
+            <a href="tel:+3499931232">99931232</a>
+            <a href="https://wa.me/3499931232">escribenos por Whatsapp</a>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Copyright 2025 - Academia de Baile</p>
+        <p><a href="#">Aviso legal</a><a href="#">Politica de Cookies</a></p>
+    </footer>
+    <script>
+            //datos
+            const datos = [
+                "inicio",
+                "cursos",
+                "escuela",
+                "contacto"
+            ];
+
+        function mostrar(seccion) {
+            
+
+            // ocultar todos las secciones
+            for(i=0;i<datos.length;i++){
+                document.getElementById(datos[i]).style.display = 'none';
+            }
+
+            //mostrar solo la sección que queremos
+            document.getElementById(seccion).style.display = 'block';
+        }
+        // al cargar la página lanzamos la función mostrar
+        mostrar("inicio");
+
+
+
+    </script>
+</body>
+
+</html>
