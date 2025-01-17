@@ -12,12 +12,13 @@
     <section id="galeria">
 
         <!-- imagen actual -->
-        <img src="https://picsum.photos/id/237/200/300" alt="">
+        <img src="" alt="">
 
         <div class="botonera">
             <!-- botones de control -->
             <button onclick="cargarAnt()">Ant</button>
             <button onclick="cargarSig()">Sig</button>
+            <h2></h2>
                         
         </div>
     </section>
@@ -32,22 +33,41 @@
             "https://picsum.photos/id/241/200/300"
         ];
 
-        function cargarAnt(){
-            alert('Anterior');
+        // Almacena el índice del array fotos
+        let numFoto = 0;
+
+        // FUNCIONES: Definen acciones que van a ser realizadas
+
+        // definimos las tareas de función cargar Siguiente
+        function cargarSig(){
+            // Consultamos la foto por la que vamos y le sumamos 1
+            numFoto++;            
+            // Llamamos a la función cargarImg con el parametro de la foto
+            cargarImg(numFoto);
         }
 
-        function cargarSig(){
-            alert('Siguiente');
+        //Cargar foto anterior
+        function cargarAnt(){
+            // Consultamos la foto por la que vamos y le restamos 1
+            numFoto--;            
+            // Llamamos a la función cargarImg con el parametro de la foto
+            cargarImg(numFoto);
         }
+
 
         function cargarImg(numero) {
+            
            let direccionImagen = fotos[numero];
 
             document.querySelector("img").src= direccionImagen;
+
+            document.querySelector("h2").innerHTML="Imagen nº: "+numero;
         }
 
-       
+        // al cargar la página, se carga la primera imagen
+        cargarImg(0);
 
+       
        
     </script>
 </body>
