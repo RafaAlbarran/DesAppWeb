@@ -16,8 +16,8 @@
 
         <div class="botonera">
             <!-- botones de control -->
-            <button onclick="cargarAnt()">Ant</button>
-            <button onclick="cargarSig()">Sig</button>
+            <button id="btnAnterior" onclick="cargarAnt()">Ant</button>
+            <button id="btnSiguiente" onclick="cargarSig()">Sig</button>
             <h2></h2>
                         
         </div>
@@ -49,19 +49,34 @@
         //Cargar foto anterior
         function cargarAnt(){
             // Consultamos la foto por la que vamos y le restamos 1
-            numFoto--;            
+            numFoto--;
+            
             // Llamamos a la función cargarImg con el parametro de la foto
             cargarImg(numFoto);
         }
 
 
         function cargarImg(numero) {
-            
-           let direccionImagen = fotos[numero];
+            //Comprobar si estamos en la primera imagen
+            if(numero == 0){
+                
+                //Ocultamos botón Anterior
+                document.querySelector('btnAnterior').stlye.display="none";
+            }
+
+            //Comprobar si estamos en la última imagen
+            if(numero == fotos.length){
+
+                //Ocultamos botón Siguiente
+                document.querySelector('btnSiguiente').stlye.display="none";
+            }
+
+            let direccionImagen = fotos[numero];
 
             document.querySelector("img").src= direccionImagen;
 
             document.querySelector("h2").innerHTML="Imagen nº: "+numero;
+            
         }
 
         // al cargar la página, se carga la primera imagen
