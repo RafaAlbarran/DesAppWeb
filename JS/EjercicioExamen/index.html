@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: tan;
+            font-family: sans-serif;            
+        }
+
+        #botonera{            
+            background-color: white;
+            padding: 5px;
+
+        }
+
+        #botonera button{
+            color: blue;
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+
+        }
+
+        p{
+            color:darkblue;
+        }
+        img{
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Los millonarios</h1>
+    <div id="botonera">
+        <button onclick="saludo()">Saludar</button>
+        <button onclick="mostrarDato(0)">Valor 1</button>
+        <button onclick="mostrarDato(1)">Valor 2</button>
+        <button onclick="mostrarDato(2)">Valor 3</button>
+        <button onclick="borrarDatos()">Borrar</button>
+        <button onclick="mostrarSiguiente()">Siguiente -></button>
+        <button onclick="mostrarAnterior()">Anterior</button>
+        <button onclick="mostrarTodo()">Mostrar todo</button>
+        <button onclick="generarAleatorio()">Aleatorio</button>
+    </div>
+    <p id="parrafo"></p>
+
+
+    <script>
+        const millonarios = [
+            ["Elon Musk", 52, 230000000000],
+            ["Jeff Bezos", 59, 170000000000],
+            ["Bernard Arnault", 74, 200000000000],
+            ["Bill Gates", 67, 120000000000],
+            ["Warren Buffett", 93, 100000000000]
+        ];
+
+        let indiceActual=0;
+
+        const campos = ["Nombre: ", "Edad: ", "Patrimonio estimado: "];
+
+        //console.log(millonarios);
+
+        function saludo(){
+            let texto='Hola';
+            texto+='<img src="https://img2.rtve.es/i/?w=1600&i=01737420709599.jpg" alt="">';
+            
+            document.querySelector("#parrafo").innerHTML=texto;
+        }
+
+        function mostrarDato(numero){
+            let texto="Valor "+(numero+1)+" es:<br>";
+            texto+=millonarios[numero][0];
+            document.querySelector("#parrafo").innerHTML=texto;
+
+            //asignar al indiceActual el valor del parámetro
+            indiceActual=numero;
+        }
+        
+        function borrarDatos(){
+            //resetar el indiceActual
+            indiceActual=-1;
+            document.querySelector("#parrafo").innerHTML="";
+            
+        }
+
+        function mostrarSiguiente(){
+            // aumentamos el valor del indiceActual
+            indiceActual++;
+
+            //llamo a la función pasandole por parametro el indiceActual
+            mostrarDato(indiceActual);
+        }
+
+        function mostrarAnterior(){
+             // decrementamos el valor del indiceActual
+             indiceActual--;
+
+            //llamo a la función pasandole por parametro el indiceActual
+            mostrarDato(indiceActual);
+        }
+
+        function mostrarTodo(){           
+            let texto=``;
+            for(i=0;i<millonarios.length;i++){
+                texto+=`<ul><strong>Elemento ${i+1}</strong>`;
+                for(j=0;j<millonarios[i].length;j++){
+                    texto+=`<li>${campos[j]}${millonarios[i][j]}</li>`;                    
+                }
+                texto+=`</ul>`;
+            }
+            // pintar la lista construida
+            document.querySelector("#parrafo").innerHTML=texto;
+        }
+
+        function generarAleatorio(){
+            let min=0;
+            let max=millonarios.length-1;           
+            let indice=0;
+
+            // generamos un número entre 0 y la longitud del array
+            indice= Math.floor(Math.random() * (max - min + 1) ) + min;
+
+            // llamamos a la función con el número generado
+            mostrarDato(indice);
+        }
+
+    </script>
+</body>
+
+</html>
