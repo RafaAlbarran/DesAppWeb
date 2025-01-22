@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <style>
         html {
             background: tan;
@@ -11,8 +12,7 @@
             padding: 10px;
         }
 
-        body {
-            background-color: black;
+        body {            
             padding: 10px;
             border-radius: 10px;
         }
@@ -23,52 +23,59 @@
             padding: 2px;
         }
 
-        h1{
-            color: white;
+        h1 {
+            color: black;
             font-size: 15px;
-            
+
         }
 
-        .pantalla{
+        .calculadora{
+            max-width: 200px;
+            background-color: white;
+        }
+
+        .pantalla {
             min-width: 150px;
             min-height: 150px;
-            
-            background-color: dimgrey;
+
+            background-color: black;
         }
 
         /* pone los botones en columnas*/
-        .contenedor {
+        .botones {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
         }
-
     </style>
 </head>
-<body>
-    <h1>Calculadora</h1>
-    <div class="pantalla"></div>
-    <div class="contenedor">
-        <button>AC</button>
-        <button>+/-</button>
-        <button>%</button>
-        <button>/</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>X</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>Ret</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
-    </div>
 
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <div class="pantalla"></div>
+        <div class="botones">
+            <button>AC</button>
+            <button>+/-</button>
+            <button>%</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>X</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>Ret</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+        </div>
+    </div>
 </body>
+
 </html>
