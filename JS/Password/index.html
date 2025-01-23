@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
         button{
             background-color: tan;
         }
@@ -12,18 +20,23 @@
     </style>
 </head>
 <body>
-    <form action="">
-        <label for="pass">Password:
+    <h1>Formulario</h1>
+    <form>
+        <label for="pass">Password:</label><br>
             <input type="password" id="pass">
-        </label>        
-        <button>Subnit</button>
+            <input type="submit" value="Entrar" onclick="comprobar()">
     </form>
 
-    <p id="mensaje">Hola</p>
+    <p>La clave es:</p>
+    <p id="clave"></p>
+        
 
     <script>
-        let texto = document.querySelector("#pass").value;
-        document.querySelector("#mensaje").innerHTML = texto;
+        function comprobar(){
+            let texto = document.querySelector("#pass").value;
+            document.querySelector("#clave").innerHTML = texto;
+        }
+        
     </script>
 </body>
 </html>

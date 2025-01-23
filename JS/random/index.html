@@ -6,21 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Elija un color</h2>
-    <input type="text" id="color">
+    <h2>Cambio de color de fondo</h2>    
     <button onclick="cambiarColor()">Cambiar color</button>
-    <p id="texto"></p>
+    <p id="texto">Referncia</p>
 
 
     <script>
+        const valores=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+
+        function aleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+
         function cambiarColor(){
+            let micolor2 = "#";
+            for(i=0;i<6;i++){
+                micolor2+=valores[Math.floor(Math.random()*valores.length)];
+            }
+            aleatorio(0, valores.length);
+
+            let micolor="#00FF00";
+
+            document.querySelector("#texto").innerHTML=micolor2;
+            document.body.style.backgroundColor = micolor2;
+
+            /*
             let color="";
             color=document.querySelector("#color").value;
 
             document.querySelector("#texto").innerHTML = color;
             document.body.style.background = color;
-
-        }        
+            */
+        }
+        setInterval(cambiarColor, 1000);   
 
     </script>
 </body>
