@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Elija un color</h2>
+    <input type="text" id="color">
+    <button onclick="cambiarColor()">Cambiar color</button>
+    <p id="texto"></p>
+
+
+    <script>
+        function cambiarColor(){
+            let color="";
+            color=document.querySelector("#color").value;
+
+            document.querySelector("#texto").innerHTML = color;
+            document.body.style.background = color;
+
+        }        
+
+    </script>
+</body>
+</html>
