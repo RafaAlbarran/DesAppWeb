@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Whatsapp Sender</h1>
+
+    <label for="movil">Número de Teléfono:</label>
+    <input type="number" id="movil" placeholder="0034 se incluirá automáticamente"><br>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" rows="4" placeholder="Escriba su mensaje aquí"></textarea>
+    <button onclick="enviarWhatsapp()">Mandar Mensaje de Whatsapp</button>
+    <p id="prueba"></p>
+
+
+    <script>
+        function enviarWhatsapp(){
+            let numTelefono='';
+            let mens='';
+
+            numTelefono=document.querySelector("#movil").value;
+            mens=document.querySelector("#mensaje").value;
+
+            //document.querySelector("#prueba").innerHTML=numTelefono+mens;
+
+            let direccionUrl=`http://wa.me/${numTelefono}?text=${mens}`;
+            
+            // lanzamos la url en una pestaña nueva como si fuese un target='_blank'
+            window.open(direccionUrl);
+
+        }
+
+    </script>
+</body>
+</html>

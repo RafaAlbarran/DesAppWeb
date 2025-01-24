@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cuestionario cinéfilo</h1>
+    <div id="contenedor"></div>
+
+
+
+    <script>
+        //DATOS
+        //lista de preguntas, respuestas y numero de la correcta
+        const preguntas = [
+            ["¿Quién interpretó al Señor Rosa en Reservoir Dogs?", ["Harvey Keitel", "Tim Roth", "Steve Buscemi", "Quentin Tarantino"], 2],
+            ["¿Qué película de Tarantino presenta a un grupo de cazarrecompensas en el Lejano Oeste?", ["Django Desencadenado", "Los odiosos ocho", "Malditos Bastardos", "Kill Bill"], 0],
+            ["¿Cuál es el nombre del boxeador en Pulp Fiction?", ["Vincent Vega", "Jules Winnfield", "Butch Coolidge", "Marsellus Wallace"], 2],
+            ["¿En qué año se estrenó Kill Bill: Vol. 1?", ["2001", "2003", "2004", "2002"], 1],
+            ["¿Qué actriz interpreta a La Novia en Kill Bill?", ["Lucy Liu", "Uma Thurman", "Daryl Hannah", "Zoe Bell"], 1],
+            ["¿Cuál es el nombre del famoso restaurante en Pulp Fiction?", ["Jack Rabbit Slim's", "Mickey's", "Big Kahuna Burger", "The Diner"], 0],
+            ["¿En qué película Tarantino hace un cameo como actor?", ["Malditos Bastardos", "Reservoir Dogs", "Pulp Fiction", "Death Proof"], 3],            
+            ["¿Cuál es el nombre del personaje interpretado por Samuel L. Jackson en Pulp Fiction?", ["Vincent Vega", "Jules Winnfield", "Marcellus Wallace", "Pumpkin"], 1],
+            ["¿Qué película de Tarantino fue inspirada en una serie de televisión de los años 70?", ["Malditos Bastardos", "Kill Bill", "Django Desencadenado", "Death Proof"], 3],
+            ["¿Qué película ganó la Palma de Oro en Cannes?", ["Jackie Brown", "Pulp Fiction", "Érase una vez en... Hollywood", "Reservoir Dogs"], 1]
+        ];
+
+        //  numero de pregutnas que tendrá el test
+        let nPreguntas = 5;
+
+
+        //DIBUJAMOS
+
+        let miHTML=`<ol>`;
+            //BUCLE 1: loop de bloque constructor de cada pregunta
+            for(i=0;i<nPreguntas; i++){         
+                miHTML+=`<li>`;// abre item de pregunta
+                    miHTML+=`<p>${preguntas[i][0]}</p>`; //escribe la pregunta
+                    miHTML+=`<ul>`;//abro lista respuestas
+                        
+                        //BUCLE 2: constructor de cada respuesta
+                        for(j=0;j<preguntas[i][1].length;j++){
+                            miHTML+=`<li>`;
+                                miHTML+=`<input id="r${i}${j}" name="p${i}" type="radio">`;
+                                miHTML+=`<label for="r${i}${j}">${preguntas[i][1][j]}</label>`;
+                            miHTML+=`</li>`;
+                        }
+        
+                    miHTML+=`</ul>`; //cierro lista respuestas
+                miHTML+=`</li>`; //cerraria item de pregunta
+            }
+        miHTML+=`</ol>`;
+
+        console.log(miHTML);
+
+        document.querySelector('#contenedor').innerHTML=miHTML;
+
+
+
+
+
+
+
+    // /* function crearCuestionario(){
+    //     //creamos el cuestionario
+    //     for(i=0;i<5;i++){
+    //         cargarPregunta(i);
+    //     }
+    // } */
+
+    // function cargarPregunta(numPregunta) {
+    //     let miHTML = "";
+    //     miHTML = preguntas[0][0];
+    //     document.querySelector("#pregunta").innerHTML = miHTML;
+    //     cargarRespuestas(numPregunta);
+
+    // }
+
+    // function cargarRespuestas(numPregunta) {
+    //     let respuestas = `<ul>`;
+    //     //for(i=0;i<preguntas[numPregunta][1].length-1;i++){
+    //     for (j = 0; j < preguntas[numPregunta][1].length; j++) {
+    //         respuestas += `<li>${preguntas[numPregunta][1][j]}</li>`;
+    //     }
+    //     //}
+    //     respuestas += `</ul>`;
+    //     document.querySelector("#cuestiones").innerHTML = respuestas;
+    // }
+
+    // //cargarPregunta(0);
+    // //crearCuestionario();
+
+    </script>
+</body>
+
+</html>

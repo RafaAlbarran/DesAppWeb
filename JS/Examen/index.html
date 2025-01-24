@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: tan;
+            max-width: 350px;
+        }
+
+        .contenedor {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .botones {
+            margin-top: 10px;
+
+        }
+
+        img {
+            width: 100%;
+            animation: animacion 2s;            
+        }
+
+        #frase{
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        #personaje{
+            font-size: 12px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            background-color: aquamarine;
+            display: flex;
+
+        }
+
+        @keyframes animacion {
+            0%{
+                scale: 0.5;
+            }
+            100%{
+                scale: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Frases célebres</h1>
+    <div class="contenedor">
+        <img id="imagen"
+            src="https://images.ecestaticos.com/clZUo-U7KY7MMdGAaYD7lXzBQXU=/0x0:2000x1500/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F3b8%2Fd97%2F714%2F3b8d97714658741cc4d256c3df8d1f3f.jpg"
+            alt="Frases célebres de películas">
+            <p id="frase">Aquí la frase o cita</p>
+        <p id="personaje">Nombre personaje</p>
+    </div>
+    <div class="botones">
+        <button onclick="imagenSiguiente()" id="btnSig">Siguiente</button>
+        <button onclick="imagenAnterior()" id="btnAnt">Anterior</button>
+    </div>
+
+
+    <script>
+        const datos = [
+            ["https://estaticos-cdn.prensaiberica.es/clip/53d2c045-d64b-4956-931a-7d36dfc8f4d1_16-9-discover-aspect-ratio_default_0.jpg",
+                "Hola, soy el señor Lobo, soluciono problemas", "Señor Lobo"],
+            ["https://www.cronicajalisco.com/nimagenes/9/2019-07-25_01-07-25___1458.jpg",
+                "Yo he visto cosas que vosotros no creeríais. Atacar naves en llamas más allá de Orion", "Roy Batty"],
+            ["https://www.eldebate.com/files/article_social/files/fp/uploads/2021/12/21/61c215c54849c.r_d.852-280-0.jpeg",
+                "Venga, alégrame el día", "Harry 'El sucio' Callaghan"],
+            ["https://www.jotdown.es/wp-content/uploads/2017/08/usual.jpg",
+                "La mejor jugada del diablo fue convencer al mundo de que no existía.", "Keyser Söze"],
+            ["https://static.wikia.nocookie.net/reservoirdogs/images/b/bc/MrPinkReservoirDogs.jpg",
+                "Ahora mismo en este tío es el único en quien confío. Es demasiado asesino para estar con la poli", "Señor Rosa"]
+        ];
+
+        const colores=["LightGreen", "Crimson", "DarkKhaki", "DodgerBlue", "MediumPurple"];
+        
+        // variable para controlar el elemento actual
+        let indice = 0;
+
+        // muestra la imagen y la frase que corresponda según el indice
+        function mostrarCita() {
+            
+            document.querySelector("#imagen").src = datos[indice][0];                        
+            document.querySelector("#frase").innerHTML = datos[indice][1];
+            document.querySelector("#personaje").innerHTML = datos[indice][2];
+
+            //aprovecho el nombre del personaje para ponerlo como texto alternativo
+            document.querySelector("#imagen").alt = datos[indice][2];
+
+            //cambio el color del fondo
+            document.body.style.background=colores[indice];          
+
+        }
+
+        function imagenSiguiente() {
+            // aumentar el indice en uno
+            indice++;
+
+            //comprobar si se llegó al final de los datos
+            if (indice == datos.length-1) {
+                // se llegó al final. Hay que ocultar el botón siguiente
+                document.querySelector("#btnSig").style.display = "none";
+            } else
+            {
+                // en otro caso se muestra
+                document.querySelector("#btnSig").style.display = "inline";
+                document.querySelector("#btnAnt").style.display = "inline";
+            }
+
+            mostrarCita();
+
+        }
+
+        function imagenAnterior() {
+            // restar uno al indice
+            indice--;
+
+            //comprobar si se llegó al principio de los datos
+            if (indice == 0) {
+                // se llegó al principio. Hay que ocultar el botón Anterior
+                document.querySelector("#btnAnt").style.display = "none";
+            } else
+            {
+                // en otro caso se muestra
+                document.querySelector("#btnSig").style.display = "inline";
+                document.querySelector("#btnAnt").style.display = "inline";
+            }
+
+            mostrarCita();
+        }
+      
+        // muestra la primera cita al cargar la página
+        mostrarCita();
+
+
+
+    </script>
+</body>
+
+</html>
