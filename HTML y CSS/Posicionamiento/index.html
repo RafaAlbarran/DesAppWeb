@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La huertina ecológica</title>
+    <meta name="author" content="Rafa Albarrán">
+    <meta name="keywords" content="cultivo, ecológico, frutas, verduras, huerto">
+    <meta name="descriptcion" content="Productos orgánicos de huerta ecológicos">
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            max-width: 350px;
+            background-color: lightgreen;
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 250px;
+           
+        }
+
+        footer{
+            display: flex;
+        }
+
+        section {
+            background-color: rgb(86, 196, 186);
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding-left: 0px;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 50px;
+        }
+
+        header nav ul li a {
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            justify-content: space-between;
+           
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+        
+
+        .cabecera{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h2{
+            background-color: rgb(0, 110, 255);
+            color: white;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+        <img src="https://img.freepik.com/vector-gratis/agricultores-que-trabajan-campo_52683-23010.jpg"
+            alt="Huerto ecológico">
+        <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <h1>Productores de frutas y verduras ecológicas en Gijón</h1>
+
+        <section id="Inicio">
+            <h2>Cultivamos bajo pedido utilizando sólo productos orgánicos</h2>
+            <p>Disponemos de terrenos propios en la mejor zona rural de Gijón. </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros productos</h2>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Faba</summary>
+                        <p>Cultivamos las variedasdes autóctonas de "Faba Asturiana", "Faba de la Granja" y "Verdina".
+                            Todas son apreciadas apreciada por su sabor y textura.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Kiwis</summary>
+                        <p>Producimos dos variedades de kiwi: el kiwi verde, conocido como Hayward, que es el más común
+                            y apreciado por su sabor dulce y su textura; y el kiwi amarillo, que incluye variedades como
+                            Gold o Hardy, que tienen un sabor más dulce y una pulpa de color amarillo.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Aguacates</summary>
+                        <p>Cultivamos dos variedades de aguacate: el aguacate Hass, que es el más popular por su sabor y
+                            textura, y el aguacate Fuerte, que tiene una piel más suave y un sabor ligeramente
+                            diferente. </p>
+                    </details>
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con nosostros para relizar pedidos</h2>
+            <label for="correo">Correo-electrónco
+                <input type="email" id="correo">
+            </label>
+            <label for="descripcion">Descripción
+                <textarea name="" id="descripcion"></textarea>
+            </label>
+            <button>Enviar</button>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
