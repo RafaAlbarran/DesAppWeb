@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares de interés en Francia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <i class="fa-solid fa-earth-europe"></i>
+            <p>Logo</p>
+        </div>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="#nosotros"><i class="fa-solid fa-globe"></i>Sobre nosotros</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <h1>Lugares de interés en Francia</h1>
+        <section id="inicio">
+            <img id="imagenLugar" src="img/Principal Francia.jpg" alt="Mapa de Francia con un dedo apuntando">
+            <button onclick="anteriorImagen()" id="btnAnterior">Anterior</button>
+            <button onclick="siguienteImagen()" id="btnSiguiente">Siguiente</button>
+            <button onclick="imagenAleatoria()">Aleatorio</button>
+            <h2 id="lugar">Nombre del sitio</h2>
+            <p id="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ab nostrum sit</p>
+        </section>
+
+        <section id="nosotros">
+            <h2>Destinos turísticos</h2>
+            <p>Nos dedicamos a seleccionar los mejores destinos para visitar en Francia, con toda la información
+                necesaria para el viaje</p>
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con nosotros</h2>
+            <p>Déjanos un correo electrónico con tu pregunta y te respondemos a la mayor brevedad</p>
+            <label for="correo">E-mail:<input type="text" id="correo"></label>
+            <label for="pregunta">Su pregunta:<textarea name="pregunta" id="pregunta"></textarea></label>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2025 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

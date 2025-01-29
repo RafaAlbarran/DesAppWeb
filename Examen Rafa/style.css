@@ -1,0 +1,97 @@
+/* Fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --c1: #E66613;
+    --c2: #EEE;
+
+    --ff: "Montserrat";
+    --m: 50px;
+}
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+* {
+    outline: 1px red solid;
+    padding: 3px;
+}
+
+body{
+    background-color: tan;
+    font-family: var(--ff);
+}
+
+header,
+footer {
+    background-color: var(--c2);
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    gap: 1px;
+    margin-top: 50px;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;  
+    gap: 10px;    
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    margin-top: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+p {
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+img{
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+section{
+    background-color: rgb(177, 64, 192);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: rgb(145, 126, 212);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(70, 226, 161);   
+}
