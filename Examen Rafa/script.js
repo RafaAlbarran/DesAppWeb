@@ -11,7 +11,7 @@ const datos=[
     ["Costa Azul", "Es una de las costas más emblemáticas no sólo de Francia, si no del mundo, donde se dan cita cada año algunas de las celebrities más conocidas."]
 ];
 
-let indiceActual=0; //para controlar en que posición del array estamos
+let indiceActual=-1; //para controlar en que posición del array estamos
 
 function siguienteImagen(){
     //aumentar en 1 el indice
