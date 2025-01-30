@@ -1,20 +1,14 @@
 /* Fuente de google*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --c1: #E66613;
     --c2: #EEE;
+    --c3: #8fbc67;
 
-    --ff: "Montserrat";
+    --ff: "Poppins";
     --m: 50px;
 }
-
-.montserrat {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
   
 * {
     outline: 1px red solid;
@@ -28,11 +22,12 @@ body{
 
 header,
 footer {
-    background-color: var(--c2);
+    background-color: var(--c3);
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
@@ -42,8 +37,22 @@ header nav ul {
     padding-left: 0;
 
     display: flex;
-    gap: 1px;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(63, 69, 237);    
+}
+
+header nav ul li{
+    background-color: rgb(86, 190, 216);     
+}
+
+header nav ul li:hover{
+    background-color: rgb(177, 64, 192);    
 }
 
 main {
@@ -53,8 +62,9 @@ main {
 }
 
 footer {
+    font-size: 10px;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     margin-top: 25px;
 }
 
@@ -62,36 +72,82 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+h1{
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
 p {
-
+    font-size: 14px;    
 }
 
-nav ul{
-    list-style: none;
+label{
+    font-size: 12px;
+    font-weight: bold;
 }
 
-nav ul li a{
-    text-decoration: none;
+.logo{
+    width: 80px;
+}
+
+.milogo{
+    color: #ac3c3c;    
+    font-weight: bold;
+    font-size: 15px;
 }
 
 img{
-    width: 250px;
+    max-width:100%;
     aspect-ratio: 1/1;
     border-radius: 10px;
 }
 
 section{
-    background-color: rgb(177, 64, 192);
+    border: solid 2px black;
+    background-color: rgb(192, 111, 203);
     border-radius: 20px;
     margin-bottom: 20px;
+    flex:1 1 auto;
 }
 
 button{
-    background-color: rgb(145, 126, 212);
-    padding: 10px;
+    background-color: rgb(192, 111, 203);
+    padding: 5px;
     border-radius: 10px;
 }
 
 button:hover{
     background-color: rgb(70, 226, 161);   
+}
+
+@media(max-width:650px){
+	body{
+        padding: 10px;
+	}
+}
+
+@media(max-width:430px){
+	body{		
+		padding:5px;
+		border-radius:0;
+		margin: 0;
+	}
+	html{
+		padding: 0;        
+	}
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;      
+    }
+    .logo{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .menu{
+        margin: 0 auto;
+    }
 }
