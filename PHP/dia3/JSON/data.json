@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "nombre": "Titanic",
+            "img": "001.jpg",
+            "autor": "James Cameron",
+            "fecha": 1992,
+            "dato1": "se hunde",
+            "": ""
+        },
+        {
+            "nombre": "Avatar",
+            "img": "002.jpg",
+            "autor": "James Cameron",
+            "fecha": 2006,
+            "dato1": "son azules",
+            "": ""
+        },
+        {
+            "nombre": "Terminator",
+            "img": "003.jpg",
+            "autor": "James Cameron",
+            "fecha": 1085,
+            "dato1": "chatgpt se rebela",
+            "": ""
+        }
+    ]
+}
