@@ -31,9 +31,9 @@ $datos=[
     // Nombre,      Ruta,                           Visible/activo/inactivo
     ['Dia 1',       '/dia1',                                 1],
     ['Variables',   'variables/mivariable.php',              1],
-    ['JSON',       '/dia3/JSON/index.php',                   1],
-    ['Dia 3',       '/dia2',                                 0],
-    ['Dia 4',       '/dia2',                                 0],
+    ['JSON',        '/dia3/JSON/index.php',                  1],
+    ['GET',         '/GET',                                  1],
+    ['Menu Web',    '/webPHP',                               1],
     ['Dia 5',       '/dia2',                                 0],
     ['Dia 6',       '/dia2',                                 0],
     ['Dia 7',       '/dia2',                                 0],
