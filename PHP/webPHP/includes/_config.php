@@ -56,10 +56,12 @@ $datos = [
 
 ];
 
+/* FUNCIONES */
+
 function constructorMenu(){
     global $menu; // para poder utilizar las variables fuera de la función
 
-    echo 'Hola';
+    //echo 'Hola';
     
     echo "<nav> <ul>";
     //inicio del bucle
@@ -82,4 +84,11 @@ function constructorMenu(){
 
 }
 
+
+//COnvertir formato teléfono a numero limpio: +34 666 555 888 ->
+//formatNumTel()
+function formatNumTel($numero){
+    //Eliminar espacios y el signo +
+    $numeroFormateado = str_replace()
+}
 ?>

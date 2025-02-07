@@ -1,0 +1,45 @@
+{
+    "peliculas": [
+        {
+            "nombre": "The brutalist",
+            "poster": "brutalist.jpg",
+            "duracion": "215",
+            "director": "Brady Corbet",
+            "trailer": "https://www.youtube.com/watch?v=GdRXPAHIEW4",
+            "sala": "sala 9",
+            "horario": "16:15"
+        },
+        {
+            "nombre": "La acompañante",
+            "poster": "acompañante.jpg",
+            "duracion": "96",
+            "director": "Drew Hancock",
+            "trailer": "https://www.youtube.com/watch?v=22xmiGr9gNc",
+            "sala": "sala 4",
+            "horario": "18:30"
+        },
+        {
+            "nombre": "Polican",
+            "poster": "polican.jpg",
+            "duracion": "89",
+            "director": "Peter Hastings",
+            "trailer": "https://www.youtube.com/watch?v=86o3-BJ8YqU",
+            "sala": "sala 8",
+            "horario": "17:00"
+        }   
+    ],
+    "cafeteria":[
+        {
+            "productos": "palomitas mini",
+            "precio": "5"
+        }
+    ],
+    "usuarios":[
+        {
+            "usuario": "admin",
+            "pass": "123",
+            "rol": 1
+        }
+
+    ]
+}

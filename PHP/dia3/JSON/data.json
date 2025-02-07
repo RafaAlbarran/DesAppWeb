@@ -1,28 +1,32 @@
 {
     "data": [
         {
-            "nombre": "Titanic",
+            "nombre": "Reservoir dogs",
             "img": "001.jpg",
-            "autor": "James Cameron",
+            "autor": "Quentin Tarantino",
             "fecha": 1992,
-            "dato1": "se hunde",
-            "": ""
+            "dato1": "Im atraco que sale mal"           
         },
         {
-            "nombre": "Avatar",
+            "nombre": "Pulp fiction",
             "img": "002.jpg",
-            "autor": "James Cameron",
-            "fecha": 2006,
-            "dato1": "son azules",
-            "": ""
+            "autor": "Quentin Tarantino",
+            "fecha": 1994,
+            "dato1": "Tres historias que se entrelazan"
         },
         {
-            "nombre": "Terminator",
+            "nombre": "Malditos bastardos",
             "img": "003.jpg",
-            "autor": "James Cameron",
-            "fecha": 1085,
-            "dato1": "chatgpt se rebela",
-            "": ""
+            "autor": "Quentin Tarantino",
+            "fecha": 2009,
+            "dato1": "Un grupo de soldados en la Alemania nazi"     
+        },
+        {
+            "nombre": "Erase una vez en... Hollywood",
+            "img": "004.jpg",
+            "autor": "Quentin Tarantino",
+            "fecha": 2019,
+            "dato1": "Un actor y su doble en ek Hollywood de los 70"
         }
     ]
 }
