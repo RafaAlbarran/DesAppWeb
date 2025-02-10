@@ -1,0 +1,46 @@
+{
+    "cervezas": [
+        {
+            "id": 1,
+            "nombre": "Cerveza Clara",
+            "alcohol": 5,
+            "precio": 2.5,
+            "tipo": "Lager"
+        },
+        {
+            "id": 2,
+            "nombre": "Cerveza Oscura",
+            "alcohol": 6.5,
+            "precio": 3,
+            "tipo": "Stout"
+        },
+        {
+            "id": 3,
+            "nombre": "Cerveza IPA",
+            "alcohol": 7,
+            "precio": 3.5,
+            "tipo": "IPA"
+        },
+        {
+            "id": 4,
+            "nombre": "Cerveza de Trigo",
+            "alcohol": 5.5,
+            "precio": 2.75,
+            "tipo": "Weissbier"
+        },
+        {
+            "id": 5,
+            "nombre": "Cerveza Artesanal",
+            "alcohol": 8,
+            "precio": 4,
+            "tipo": "Pale Ale"
+        },       
+        
+        {
+            "nombre": "Especial",
+            "tipo": "Trigo",
+            "alcohol": "7.5",
+            "precio": "4.50"
+        }
+    ]
+}

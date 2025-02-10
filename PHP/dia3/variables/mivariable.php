@@ -23,10 +23,10 @@ $texto="Eres ".$datos['nombre'];
 echo $texto;
 
 $students = [
-['nombre => 'Juan',
-'apellido' => 'García',
-'lugar' => 'Gijón',
-'nacim' => 1991]
+["nombre" => "Juan",
+"apellido" => "García",
+"lugar" => "Gijón",
+"nacim" => "1991"]
 
 ];
 
