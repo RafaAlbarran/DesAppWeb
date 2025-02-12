@@ -1,0 +1,38 @@
+*{
+    outline: 1px solid red;
+}
+body{
+    max-width: 350px;
+    background-color: #C7D8E7;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: sans-serif;    
+}
+header,
+footer{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #87c1f3;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+li img{
+    width: 125px;   
+}
+
+img{
+    width: 100%;   
+}

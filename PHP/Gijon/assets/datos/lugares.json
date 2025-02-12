@@ -1,0 +1,41 @@
+{
+    "rincones": [
+        {
+            "imagen": "SanLorenzo.jpg",
+            "nombre": "La playona de San Lorenzo",
+            "descripcion": "Recorre el paseo de la playa conocido como El Muro. Si es temporada de baños, te puedes dar un chapuzón en sus cálidas aguas"     
+        },
+        {
+            "imagen": "Providencia.jpg",
+            "nombre": "Mirador de La Providencia",
+            "descripcion": "Vistas panorámicas del mar Cantábrico. Abstenerse quienes sufran de mareos"     
+        },
+        {
+            "imagen": "Elogio.jpg",
+            "nombre": "Elogio del Horizonte",
+            "descripcion": "Emblemática escultura de Chillida, donde se escucha el sonido envolvente del mar. Utilizado por personas con tendencias suicidas"     
+        },
+        {
+            "imagen": "Sombras.jpg",
+            "nombre": "Sombras de luz",
+            "descripcion": "Juega con las sombras que se proyectan en el suelo en esta escultura en el paseo marítimo"     
+        },
+        {
+            "imagen": "Marques.jpg",
+            "nombre": "Plaza del marqués",
+            "descripcion": "Fuente con la estatua de Pelayo, con el palacio Revillagigedo al fondo. Lugar de celebración en fiestas como el Antroxu"     
+        },
+        {
+            "imagen": "Laboral.jpg",
+            "nombre": "Universidad Laboral",
+            "descripcion": "Enorme complejo que alberga varias instalaciones, como un teatro. Se puede subir a la torre y contemplar vistas de la ciudad"     
+        }
+    ],
+    "sporting": [
+        {
+            "imagen": "Molinon.jpg",
+            "nombre": "Real Sporting de Gijón",
+            "descripcion": "Conoce el estadio más antiguo de España, donde juega como local el Real Sporting de Gijón"     
+        }
+    ]
+}
