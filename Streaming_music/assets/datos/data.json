@@ -1,0 +1,68 @@
+{
+    "canciones": [
+        {
+            "id": 1,
+            "interprete": "Blank & Jones with Bobo",
+            "titulo": "Perfect Silence",
+            "imagen": "https://i1.sndcdn.com/artworks-000590968391-tb8cd1-t500x500.jpg",
+            "url": "https://www.youtube.com/embed/A-9I9rfzixQ?si=pwOhvqR7gTLdCGhF"
+        },
+        {
+            "id": 2,
+            "interprete": "Tiesto",
+            "titulo": "Adagio for Strings",
+            "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9f/Adagio_for_strings_cover.jpg",
+            "url": "https://www.youtube.com/embed/2EaE0_gQLw0?si=ouLnun9fMH6Iji9u"
+        },
+        {
+            "id": 3,
+            "interprete": "Armin van Buuren",
+            "titulo": "Shivers",
+            "imagen": "https://i.ytimg.com/vi/Fm-as7TyBJA/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/5GowkwJN-qU?si=scFW6YmJK8XggHAb"
+        },
+        {
+            "id": 4,
+            "interprete": "Serge Devant feat. Emma Hewitt",
+            "titulo": "Take Me With You",
+            "imagen": "https://i.ytimg.com/vi/H56xC8gy7jM/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/uvf9DlliY84?si=LgvR0rV55jH0z3BX"
+        },
+        {
+            "id": 5,
+            "interprete": "Paul van Dyk",
+            "titulo": "For an Angel",
+            "imagen": "https://mixmaglatinamerica.com/assets/uploads/images/_columns2/pvd-24-2.jpg",
+            "url": "https://www.youtube.com/embed/--3eIRSg2RY?si=EDqKba2I_TmwjCBd"
+        },
+        {
+            "id": 6,
+            "interprete": "Ferry Corsten",
+            "titulo": "Beautiful",
+            "imagen": "https://i.ytimg.com/vi/3LHYb2gYp0g/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/zzE0LHp6Rbg?si=6__65zSDci6HNLX3"
+        },
+        {
+            "id": 7,
+            "interprete": "Above & Beyond feat.Zoe Johnston",
+            "titulo": "Good For Me",
+            "imagen": "https://i.ytimg.com/vi/qMNvnf0tovM/maxresdefault.jpg",
+            "url": "https://www.youtube.com/embed/DNNEF03aYPg?si=E58qnWTOGDgtmsk3"
+        },
+        {
+            "id": 8,
+            "interprete": "Cosmic Gate",
+            "titulo": "Fire Wire",
+            "imagen": "https://i.ytimg.com/vi/uTgyr7mM8Mo/sddefault.jpg",
+            "url": "https://www.youtube.com/embed/b-1jLp0E8K0?si=HWadrKcKP6pn2wPf"
+        },
+        {
+            "id": 9,
+            "interprete": "Dash Berlin ft. Emma Hewitt",
+            "titulo": "Waiting",
+            "imagen": "https://cdn-images.dzcdn.net/images/cover/e60a1b6f6a2ad45836c500b2c5a06823/0x1900-000000-80-0-0.jpg",
+            "url": "https://www.youtube.com/embed/YYrZsH32rF8?si=RsWKWvNjoJKNVsPN"
+        }
+        
+    ]
+}
