@@ -1,0 +1,89 @@
+body{
+    max-width: 960px;
+    background-color: floralwhite;
+    font-family: 'Lucida Sans', sans-serif;    
+}
+
+h1{
+    text-align: center;
+}
+li img{
+   width: 100px;
+   height: 1/1;    
+}
+
+.flex{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ficha{
+    width: 150px;
+    height: 200px;   
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    text-align: center;    
+}
+
+.ficha p{
+    font-size: 14px;    
+    font-weight: bold;
+    display: inline;
+}
+.otros{
+    font-size: 10px;    
+    font-weight: normal;    
+}
+
+.entradaDatos{
+    width: 250px;
+    height: 350px;   
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    display:block;       
+}
+
+form label{
+    font-size: 14px;    
+    font-weight: bold;
+  
+}
+
+form input{
+    padding: 3px;
+    margin: 10px auto;
+}
+
+.fila{
+    display:flex;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.menu button{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    justify-content: right;
+ 
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    background-color: blue;    
+    color: white;
+}
